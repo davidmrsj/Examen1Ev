@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner4"
+        app:layout_constraintStart_toEndOf="@+id/spinner4"
+        app:layout_constraintTop_toTopOf="@+id/spinner4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner3"
+        app:layout_constraintStart_toEndOf="@+id/spinner3"
+        app:layout_constraintTop_toTopOf="@+id/spinner3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNumero"
+        android:layout_width="216dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="84dp"
+        android:text="Numero"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerPerso"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner2"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="doblarNum"
+        android:text="calcular"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPerso"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPerso"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPerso" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="296dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="132dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPerso"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPerso"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPerso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
